@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  color: white;
+}
+/* ------------------------header */
+header {
+  padding: 20px 0 0 0;
+}
+/* my name */
+.span-name {
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+/* property of navbar links */
+nav ul li a {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+/* navigation padding */
+.nav-link {
+  color: white;
+  position: relative;
+}
+.nav-link:hover {
+  color: white;
+  position: relative;
+}
+.nav-link::after{
+  content: '';
+  position: absolute;
+  background-color: rgb(81, 129, 219);
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 0;
+}
+.nav-link:hover::after{
+  content: '';
+  position: absolute;
+  background-color: rgb(81, 129, 219);
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 90%;
+  transition: 0.3s ease-in;
+}
+#active::after{
+  content: '';
+  position: absolute;
+  background-color: rgb(81, 129, 219);
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 90%;
+  transition: 0.3s ease-in;
+}
+
+/* ----------------------------------------- */
+/* soc med */
+.social-links i {
+  padding: 20px 20px 0 0;
+  cursor: pointer;
+}
+
+i {
+  font-size: 30px;
+}
+i:nth-child(1) {
+  color: rgb(144, 64, 182);
+}
+i:nth-child(2) {
+  color: rgb(92, 94, 245);
+}
+i:nth-child(3) {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+i:nth-child(4) {
+  color: rgb(117, 119, 236);
+}

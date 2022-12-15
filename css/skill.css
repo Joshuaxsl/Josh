@@ -1,0 +1,124 @@
+/* Copy this-------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  color: white;
+}
+/* ------------------------header */
+header {
+  padding: 15px 0 15px 0;
+}
+/* property of navbar links */
+nav ul li a {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+/* navigation padding */
+.nav-link {
+  color: white;
+  position: relative;
+}
+.nav-link:hover {
+  color: white;
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(81, 129, 219);
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 0;
+}
+.nav-link:hover::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(81, 129, 219);
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 90%;
+  transition: 0.3s ease-in;
+}
+#active::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(81, 129, 219);
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 90%;
+  transition: 0.3s ease-in;
+}
+/* end-------------------------------------------------------------- */
+/* skills */
+i {
+  font-size: 15px;
+}
+/* icon for skills */
+.skills-icons{
+    font-size: 75px;
+}
+.skills-row{
+    position: relative;
+    background-color: rgb(44, 44, 44);
+    cursor: pointer;
+}
+
+.skills-row:hover{
+    transition: all 0.6s ease-out;
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.skills-row::before{
+    content: '';
+    border-left: 5px solid rgb(96, 81, 235);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: scale(1, 0);
+    transition: 0.3s ease;
+}
+.skills-row:hover::before{
+    position: absolute;
+    transform: scale(1, 1);
+    transition: 0.5s ease;
+}
+.skills-title{
+    padding: 45px 30px 30px 30px ;
+}
+/* Skills title */
+.title{
+    display: flex;
+    align-items: center;
+}
+.title::before{
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    position: relative;
+    left: 0;
+    top: 30%;
+}
+.title::after{
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    position: relative;
+    right: 0;
+    top: 30%;
+}
