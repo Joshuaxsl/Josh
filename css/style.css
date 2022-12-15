@@ -10,7 +10,7 @@ body {
 }
 /* ------------------------header */
 header {
-  padding: 20px 0 0 0;
+  padding: 0px 0 0 0;
 }
 /* my name */
 .span-name {
@@ -66,21 +66,26 @@ nav ul li a {
 
 /* ----------------------------------------- */
 /* soc med */
-.social-links i {
-  padding: 20px 20px 0 0;
-  cursor: pointer;
-}
 
-i {
+.social-links i {
+  text-align: center;
+  padding: 10px 10px 10px 0px;
+  cursor: pointer;
   font-size: 30px;
 }
-i:nth-child(1) {
+i{
+  color: rgb(146, 146, 151);
+}
+.first-icon:hover {
+  transition: all 0.5s ease;
   color: rgb(144, 64, 182);
 }
-i:nth-child(2) {
+.second-icon:hover {
+  transition: all 0.5s ease;
   color: rgb(92, 94, 245);
 }
-i:nth-child(3) {
+.third-icon:hover{
+  transition: all 0.5s ease;
   background: radial-gradient(
     circle at 30% 107%,
     #fdf497 0%,
@@ -94,6 +99,7 @@ i:nth-child(3) {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-i:nth-child(4) {
+i.fourth-icon:hover {
+  transition: all 0.5s ease;
   color: rgb(117, 119, 236);
 }
