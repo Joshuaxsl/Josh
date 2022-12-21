@@ -77,14 +77,17 @@ i{
   color: rgb(146, 146, 151);
 }
 i.first-icon:hover {
+  transform: scale(1.2,1.2);
   transition: all 0.5s ease;
   color: rgb(144, 64, 182);
 }
 i.second-icon:hover {
+  transform: scale(1.2,1.2);
   transition: all 0.5s ease;
   color: rgb(92, 94, 245);
 }
 i.third-icon:hover{
+  transform: scale(1.2,1.2);
   transition: all 0.5s ease;
   background: radial-gradient(
     circle at 30% 107%,
@@ -100,6 +103,18 @@ i.third-icon:hover{
   -webkit-text-fill-color: transparent;
 }
 i.fourth-icon:hover {
+  transform: scale(1.2,1.2);
   transition: all 0.5s ease;
   color: rgb(117, 119, 236);
+}
+@keyframes slideinright{
+  from{
+    transform: translateX(150px);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+.right-col{
+  animation: slideinright 3s ease-out;
 }

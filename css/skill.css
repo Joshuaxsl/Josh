@@ -103,12 +103,13 @@ i.skills-icons{
 
 .skills-row::before{
     content: '';
-    border-left: 5px solid rgb(96, 81, 235);
+    border-bottom: 5px solid rgb(96, 81, 235);
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
-    height: 100%;
-    transform: scale(1, 0);
+    height: 0;
+    width: 100%;
+    transform: scale(0, 1);
     transition: 0.3s ease;
 
 }

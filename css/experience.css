@@ -64,7 +64,7 @@ a.nav-link:hover::after {
   background-color: rgb(36,35,35);
 } 
 #sec-cont{
-  padding: 50px 70px 50px 70px;
+  padding: 30px 20px 30px 20px;
 }
 #content-cont{
   padding: 0 50px 0 50px;
@@ -110,7 +110,7 @@ a.nav-link:hover::after {
   left: 50;
   height: 100%;
   width: 100%;
-  background-color: rgb(207, 204, 204);
+  background-color: rgb(240, 240, 240);
   transition: 0.7s ease;
   z-index: -1;
 }
@@ -137,4 +137,55 @@ a.nav-link:hover::after {
 }
 .aws-icon{
   color: rgb(233,126,51);
+}
+.twitter-icon{
+  color: rgb(28,156,234);
+}
+/* slide left */
+@keyframes slideinleft{
+  from{
+    transform: translateX(-150px);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+.micro-slideleft{
+  animation-name: slideinleft;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+}
+.google-slideleft{
+  animation-name: slideinleft;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+.apple-slideleft{
+  animation-name: slideinleft;
+  animation-duration: 2.5s;
+  animation-timing-function: ease;
+}
+/* slide right */
+@keyframes slideinright{
+  from{
+    transform: translateX(150px);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
+.meta-slideright{
+  animation-name: slideinright;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+}
+.aws-slideright{
+  animation-name: slideinright;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+.twitter-slideright{
+  animation-name: slideinright;
+  animation-duration: 2.5s;
+  animation-timing-function: ease;
 }
