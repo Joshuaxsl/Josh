@@ -67,6 +67,28 @@ i {
 i.skills-icons{
     font-size: 75px;
 }
+/* icon */
+.html-icon{
+  color: rgb(215,72,36);
+}
+.css-icon{
+  color: rgb(36,73,216);
+}
+.javasript-icon{
+  color: rgb(234,212,28);
+}
+.bootstrap-icon{
+  color: rgb(82,58,118);
+}
+.php-icon{
+  color: rgb(67,70,131);
+}
+.github-icon{
+  color: rgb(11,163,232);
+}
+.git-icon{
+  color: rgb(229,76,45);
+}
 .skills-row{
     position: relative;
     background-color: rgb(44, 44, 44);

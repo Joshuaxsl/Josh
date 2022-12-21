@@ -59,3 +59,82 @@ a.nav-link:hover::after {
   transition: 0.3s ease-in;
 }
 /* end-------------------------------------------------------------- */
+#main-cont{
+  min-height: 100vh;
+  background-color: rgb(36,35,35);
+} 
+#sec-cont{
+  padding: 50px 70px 50px 70px;
+}
+#content-cont{
+  padding: 0 50px 0 50px;
+}
+#third-cont{
+  padding: 10px 10px 10px 10px;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+}
+.content p{
+  margin: 0
+}
+.in-content{
+  padding: 50px 0 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2C2C2C;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+}
+.in-content:hover{
+  transition: all 0.5s ease;
+  color: black;
+}
+.in-content::after{
+  position: absolute;
+  content: '';
+  top: 50;
+  left: 50;
+  height: 40%;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  z-index: -1;
+}
+.in-content:hover::after{
+  top: 50;
+  left: 50;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(207, 204, 204);
+  transition: 0.7s ease;
+  z-index: -1;
+}
+.logo , .logo-text{
+  padding: 0 30px 0 30px;
+}
+.logo i{
+  font-size: 50px;
+}
+.logo-text{
+  font-size: 30px;
+  font-weight: bold;
+}
+/* icons */
+.microsoft-icon{
+  color: rgb(0,165,226);
+}
+
+.meta-icon{
+  color: blue;
+}
+.google-icon{
+  color: green;
+}
+.aws-icon{
+  color: rgb(233,126,51);
+}
