@@ -1,0 +1,140 @@
+/* Copy this-------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  color: white;
+}
+/* ------------------------header */
+header {
+  padding: 15px 0 15px 0;
+}
+/* property of navbar links */
+nav ul li a {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+/* navigation padding */
+a.nav-link {
+  color: white;
+  position: relative;
+}
+a.nav-link:hover {
+  color: white;
+  position: relative;
+}
+a.nav-link::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(81, 129, 219);
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 0;
+}
+a.nav-link:hover::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(81, 129, 219);
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 90%;
+  transition: 0.3s ease-in;
+}
+#active::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(81, 129, 219);
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 90%;
+  transition: 0.3s ease-in;
+}
+/* end-------------------------------------------------------------- */
+.cont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.my-img img{
+  height: 50%;
+  width: 100%;
+}
+.snowflakes img{
+  width: 20%;
+  height: 20%;
+}
+.snowflakes-1{
+  position: absolute;
+  top: 0px;
+  left: 10%;
+}
+.snowflakes-2{
+  position: absolute;
+  top: 0px;
+  left: 20%;
+}
+.snowflakes-3{
+  position: absolute;
+  top: 0px;
+  left: 30%;
+}
+.snowflakes-4{
+  position: absolute;
+  top: 0px;
+  left: 40%;
+}
+.snowflakes-5{
+  position: absolute;
+  top: 0px;
+  left: 50%;
+}
+.snowflakes-6{
+  position: absolute;
+  top: 0px;
+  left: 60%;
+}
+.snowflakes-7{
+  position: absolute;
+  top: 0px;
+  left: 70%;
+}
+.snowflakes-8{
+  position: absolute;
+  top: 0px;
+  left: 80%;
+}
+@keyframes first{
+  0%{
+    top: 0%;
+    opacity: 1;
+  }
+  
+  100%{
+    top: 30%;
+    opacity: 0;
+  }
+}
+.snowflakes-slow{
+  animation: first 7s ease  infinite  ;
+}
+.snowflakes-mid{
+  animation: first 5s ease  infinite  ;
+}
+.snowflakes-fast{
+  animation: first 3s ease  infinite  ;
+}

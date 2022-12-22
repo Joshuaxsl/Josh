@@ -1,0 +1,129 @@
+/* Copy this-------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  color: white;
+}
+/* ------------------------header */
+header {
+  padding: 15px 0 15px 0;
+}
+/* property of navbar links */
+nav ul li a {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+/* navigation padding */
+a.nav-link {
+  color: white;
+  position: relative;
+}
+a.nav-link:hover {
+  color: white;
+  position: relative;
+}
+a.nav-link::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(81, 129, 219);
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 0;
+}
+a.nav-link:hover::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(81, 129, 219);
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 90%;
+  transition: 0.3s ease-in;
+}
+#active::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(81, 129, 219);
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 90%;
+  transition: 0.3s ease-in;
+}
+/* end-------------------------------------------------------------- */
+.center{
+  width: 70px;
+  height: 70px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cent{
+  color: transparent;
+}
+.dot-1{
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  color: yellow;
+}
+.dot-2{
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  color: blueviolet;
+}
+.dot-3{
+  position: absolute;
+  top: -10px;
+  color: green;
+}
+.dot-4{
+  position: absolute;
+  color: blue;
+  left: -5px;
+}
+.dot-5{
+  position: absolute;
+  color: rgb(10, 243, 165);
+  right: -5px;
+}
+.dot-6{
+  position: absolute;
+  bottom: -10px;
+  color: rgb(2, 195, 230);
+}
+.dot-7{
+  position: absolute;
+  bottom: 0px;
+  left: 5px;
+  color: rgb(247, 43, 43);
+}
+.dot-8{
+  position: absolute;
+  bottom: 0px;
+  right: 5px;
+  color: rgb(41, 243, 14);
+}
+@keyframes rot {
+  0%{
+    transform: rotate(0deg) scale(0.2);
+  }
+  100%{
+    transform: rotate(360deg) scale(1);
+  }
+}
+.center{
+  animation: rot 3s ease-in-out 0s infinite;
+}
